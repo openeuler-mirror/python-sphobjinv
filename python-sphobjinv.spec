@@ -1,6 +1,6 @@
 Name:           python-sphobjinv
-Version:        2.1.0
-Release:        1
+Version:        2.1
+Release:        2
 Summary:        Sphinx objects.inv inspection/manipulation tool
 
 License:        MIT
@@ -30,7 +30,7 @@ Sphinx with a completely specified cross-reference, and that’s where
 sphobjinv comes in.
 
 %prep
-%autosetup -n sphobjinv-2.1.0
+%autosetup -n sphobjinv-2.1
 rm -rf sphobjinv.egg-info
 sed -i "s|\r||g" README.rst
 
@@ -46,8 +46,11 @@ sed -i "s|\r||g" README.rst
 %doc README.rst
 %{_bindir}/sphobjinv
 %{python3_sitelib}/sphobjinv/
-%{python3_sitelib}/sphobjinv-2.1.0-py*.egg-info/
+%{python3_sitelib}/sphobjinv-2.1-py*.egg-info/
 
 %changelog
+*Wed May 18 2022 xyenchi<oriachiuan@gmail.com>-2.1-2
+-fix version typo
+
 * Thu Jul 08 2021 xuyonghui <xuyonghui@kylinos.cn> - 2.1.0-1
 - Package init

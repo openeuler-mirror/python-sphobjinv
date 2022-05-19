@@ -1,7 +1,7 @@
 # python-sphobjinv
 
 #### Description
-Sphinx objects.inv Inspection/Manipulation Tool
+The syntax required for a functional Sphinx cross-reference is highly non-obvious in many cases. Sometimes Sphinx can guess correctly what you mean,but it's pretty hit-or-miss.The best approach is to provide Sphinx with a completely specified cross-reference,and that's where sphobjinv comes in.
 
 #### Software Architecture
 Software architecture description
